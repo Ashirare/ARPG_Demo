@@ -740,6 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj1: {fileID: 8973173293751600066}
   obj2: {fileID: 1057964787}
+  initControllObj: {fileID: 8973173293751600066}
 --- !u!1 &866603286
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +956,7 @@ MonoBehaviour:
   maxDistance: 5
   minDistance: 1
   hightByTarget: 1.2
-  target: {fileID: 8632500247649999224}
+  target: {fileID: 0}
   distanceByTarget: 2
   followSmoothTime: 0.12
   rotationSmoothTime: 0.08
@@ -1131,7 +1132,7 @@ Transform:
   m_GameObject: {fileID: 1057964787}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.6, y: 0, z: -22.8}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3957,7 +3958,7 @@ Animator:
   m_GameObject: {fileID: 8973173293751600066}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 78619ea0e9e2ea84f9d02ae4880f9382, type: 3}
-  m_Controller: {fileID: 9100000, guid: 43e16d1185860534f94369b7f1f71085, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0fac9caf53a82da4aa6ac9d48b5ee7b7, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -7656,7 +7657,9 @@ GameObject:
   - component: {fileID: 8632500247649999224}
   - component: {fileID: 2390533895316275970}
   - component: {fileID: 8973173293751600068}
+  - component: {fileID: 8973173293751600070}
   - component: {fileID: 8973173293751600067}
+  - component: {fileID: 8973173293751600069}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -7678,13 +7681,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 3
   runSpeed: 6
-  turnSpeed: 960
+  rushSpeed: 8
+  turnSpeed: 720
   jumpHeight: 4
+  fallDistanceThreshold: 2.6
   inAirJumpCount: 1
   gravity: -22
-  cameraTransform: {fileID: 963194228}
+  cameraTransform: {fileID: 0}
   moveThreshold: 1
   rotationThreshold: 1
+  destinationStopDistance: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
@@ -7715,6 +7721,41 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.91, z: 0}
+--- !u!114 &8973173293751600069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973173293751600066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4380edc1fd0c5a14994a0a18e458a756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 963194228}
+--- !u!195 &8973173293751600070
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973173293751600066}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 720
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.8
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &8993243712875903755
 GameObject:
   m_ObjectHideFlags: 0
