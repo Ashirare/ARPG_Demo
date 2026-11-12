@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Avatar Mask
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Blueisland
+    m_Weight: 1
+  - m_Path: root
+    m_Weight: 1
+  - m_Path: root/Hips
+    m_Weight: 1
+  - m_Path: root/Hips/L_UpperLeg
+    m_Weight: 1
+  - m_Path: root/Hips/L_UpperLeg/L_LowerLeg
+    m_Weight: 1
+  - m_Path: root/Hips/L_UpperLeg/L_LowerLeg/L_Foot
+    m_Weight: 1
+  - m_Path: root/Hips/L_UpperLeg/L_LowerLeg/L_Foot/L_Toes
+    m_Weight: 1
+  - m_Path: root/Hips/L_UpperLeg/L_LowerLeg/L_LowerLeg_Twist_01
+    m_Weight: 1
+  - m_Path: root/Hips/L_UpperLeg/L_UpperLeg_Twist_01
+    m_Weight: 1
+  - m_Path: root/Hips/R_UpperLeg
+    m_Weight: 1
+  - m_Path: root/Hips/R_UpperLeg/R_LowerLeg
+    m_Weight: 1
+  - m_Path: root/Hips/R_UpperLeg/R_LowerLeg/R_Foot
+    m_Weight: 1
+  - m_Path: root/Hips/R_UpperLeg/R_LowerLeg/R_Foot/R_Toes
+    m_Weight: 1
+  - m_Path: root/Hips/R_UpperLeg/R_LowerLeg/R_LowerLeg_Twist_01
+    m_Weight: 1
+  - m_Path: root/Hips/R_UpperLeg/R_UpperLeg_Twist_01
+    m_Weight: 1
+  - m_Path: root/Hips/Spine
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_IndexProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_IndexProximal/L_IndexIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_IndexProximal/L_IndexIntermediate/L_IndexDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_LittleProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_LittleProximal/L_LittleIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_LittleProximal/L_LittleIntermediate/L_LittleDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_MiddleProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_MiddleProximal/L_MiddleIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_MiddleProximal/L_MiddleIntermediate/L_MiddleDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_RingProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_RingProximal/L_RingIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_RingProximal/L_RingIntermediate/L_RingDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_ThumbProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_ThumbProximal/L_ThumbIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_Hand/L_ThumbProximal/L_ThumbIntermediate/L_ThumbDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_LowerArm/L_LowerArm_Twist_01
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/L_Shoulder/L_UpperArm/L_UpperArm_Twist_01
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/Neck
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/Neck/Head
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_IndexProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_IndexProximal/R_IndexIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_IndexProximal/R_IndexIntermediate/R_IndexDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_LittleProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_LittleProximal/R_LittleIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_LittleProximal/R_LittleIntermediate/R_LittleDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_MiddleProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_MiddleProximal/R_MiddleIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_MiddleProximal/R_MiddleIntermediate/R_MiddleDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_RingProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_RingProximal/R_RingIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_RingProximal/R_RingIntermediate/R_RingDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_ThumbProximal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_ThumbProximal/R_ThumbIntermediate
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_Hand/R_ThumbProximal/R_ThumbIntermediate/R_ThumbDistal
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_LowerArm/R_LowerArm_Twist_01
+    m_Weight: 1
+  - m_Path: root/Hips/Spine/Chest/R_Shoulder/R_UpperArm/R_UpperArm_Twist_01
+    m_Weight: 1
