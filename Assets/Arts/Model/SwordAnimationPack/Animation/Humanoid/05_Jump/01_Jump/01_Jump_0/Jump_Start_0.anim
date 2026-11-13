@@ -71101,22 +71101,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0
-    functionName: SetMoveThreshold
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.016666668
-    functionName: SetRotationThreshold
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.16666667
-    functionName: JumpStart
+    functionName: StartJump
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -71126,20 +71112,6 @@ AnimationClip:
     functionName: SetMoveThreshold
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 2
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.36666667
-    functionName: SetMoveThreshold
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 1
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.38333333
-    functionName: SetRotationThreshold
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 1
+    floatParameter: 1.5
     intParameter: 0
     messageOptions: 0
