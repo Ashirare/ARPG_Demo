@@ -172,6 +172,15 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""StrongAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""3b0d085b-32a1-462d-b209-aa47e865cc74"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -271,6 +280,17 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""SwitchWR"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9a730f86-db8e-45b1-842b-44a3e43929e2"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StrongAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -579,6 +599,7 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         m_Player_MoveRight = m_Player.FindAction("MoveRight", throwIfNotFound: true);
         m_Player_Block = m_Player.FindAction("Block", throwIfNotFound: true);
         m_Player_SwitchWR = m_Player.FindAction("SwitchWR", throwIfNotFound: true);
+        m_Player_StrongAttack = m_Player.FindAction("StrongAttack", throwIfNotFound: true);
         // FreeObject
         m_FreeObject = asset.FindActionMap("FreeObject", throwIfNotFound: true);
         m_FreeObject_Click = m_FreeObject.FindAction("Click", throwIfNotFound: true);
@@ -685,6 +706,7 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_MoveRight;
     private readonly InputAction m_Player_Block;
     private readonly InputAction m_Player_SwitchWR;
+    private readonly InputAction m_Player_StrongAttack;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -732,6 +754,10 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/SwitchWR".
         /// </summary>
         public InputAction @SwitchWR => m_Wrapper.m_Player_SwitchWR;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/StrongAttack".
+        /// </summary>
+        public InputAction @StrongAttack => m_Wrapper.m_Player_StrongAttack;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -785,6 +811,9 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
             @SwitchWR.started += instance.OnSwitchWR;
             @SwitchWR.performed += instance.OnSwitchWR;
             @SwitchWR.canceled += instance.OnSwitchWR;
+            @StrongAttack.started += instance.OnStrongAttack;
+            @StrongAttack.performed += instance.OnStrongAttack;
+            @StrongAttack.canceled += instance.OnStrongAttack;
         }
 
         /// <summary>
@@ -823,6 +852,9 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
             @SwitchWR.started -= instance.OnSwitchWR;
             @SwitchWR.performed -= instance.OnSwitchWR;
             @SwitchWR.canceled -= instance.OnSwitchWR;
+            @StrongAttack.started -= instance.OnStrongAttack;
+            @StrongAttack.performed -= instance.OnStrongAttack;
+            @StrongAttack.canceled -= instance.OnStrongAttack;
         }
 
         /// <summary>
@@ -1282,6 +1314,13 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSwitchWR(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "StrongAttack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnStrongAttack(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "FreeObject" which allows adding and removing callbacks.

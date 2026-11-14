@@ -12,10 +12,10 @@ TagManager:
   - Water
   - UI
   - Obstacle
-  - Actor
+  - Player
   - Wall
-  - 
-  - 
+  - Weapon
+  - Enemy
   - 
   - 
   - 
