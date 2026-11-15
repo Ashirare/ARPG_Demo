@@ -53488,3 +53488,10 @@ AnimationClip:
     floatParameter: 10
     intParameter: 0
     messageOptions: 0
+  - time: 0.26666668
+    functionName: StartAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 12
+    messageOptions: 0

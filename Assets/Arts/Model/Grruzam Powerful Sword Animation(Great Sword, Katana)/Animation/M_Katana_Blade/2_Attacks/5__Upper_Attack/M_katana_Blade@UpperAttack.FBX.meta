@@ -1054,6 +1054,20 @@ ModelImporter:
         floatParameter: 5
         intParameter: 0
         messageOptions: 0
+      - time: 0.15665035
+        functionName: StartAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 14
+        messageOptions: 0
+      - time: 0.2991088
+        functionName: EndAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 14
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
