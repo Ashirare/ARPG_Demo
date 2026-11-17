@@ -444,6 +444,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "LockTarget",
+                    "type": "Button",
+                    "id": "55a79e73-ad13-4130-ba0e-bd6505c8edf8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -453,7 +462,7 @@
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";PC",
                     "action": "LockAt",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -464,7 +473,7 @@
                     "path": "<Mouse>/scroll",
                     "interactions": "",
                     "processors": "NormalizeVector2",
-                    "groups": "",
+                    "groups": ";PC",
                     "action": "Zoom",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -475,8 +484,19 @@
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";PC",
                     "action": "Cursor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c45e4ab-baab-4967-b1e2-4d3ddda4c075",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";PC",
+                    "action": "LockTarget",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

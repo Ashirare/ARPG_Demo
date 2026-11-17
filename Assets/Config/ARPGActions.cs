@@ -530,6 +530,15 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LockTarget"",
+                    ""type"": ""Button"",
+                    ""id"": ""55a79e73-ad13-4130-ba0e-bd6505c8edf8"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -539,7 +548,7 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";PC"",
                     ""action"": ""LockAt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -550,7 +559,7 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/scroll"",
                     ""interactions"": """",
                     ""processors"": ""NormalizeVector2"",
-                    ""groups"": """",
+                    ""groups"": "";PC"",
                     ""action"": ""Zoom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -561,8 +570,19 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";PC"",
                     ""action"": ""Cursor"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1c45e4ab-baab-4967-b1e2-4d3ddda4c075"",
+                    ""path"": ""<Mouse>/middleButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";PC"",
+                    ""action"": ""LockTarget"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -614,6 +634,7 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         m_Camera_LockAt = m_Camera.FindAction("LockAt", throwIfNotFound: true);
         m_Camera_Zoom = m_Camera.FindAction("Zoom", throwIfNotFound: true);
         m_Camera_Cursor = m_Camera.FindAction("Cursor", throwIfNotFound: true);
+        m_Camera_LockTarget = m_Camera.FindAction("LockTarget", throwIfNotFound: true);
     }
 
     ~@ARPGActions()
@@ -1120,6 +1141,7 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Camera_LockAt;
     private readonly InputAction m_Camera_Zoom;
     private readonly InputAction m_Camera_Cursor;
+    private readonly InputAction m_Camera_LockTarget;
     /// <summary>
     /// Provides access to input actions defined in input action map "Camera".
     /// </summary>
@@ -1143,6 +1165,10 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Camera/Cursor".
         /// </summary>
         public InputAction @Cursor => m_Wrapper.m_Camera_Cursor;
+        /// <summary>
+        /// Provides access to the underlying input action "Camera/LockTarget".
+        /// </summary>
+        public InputAction @LockTarget => m_Wrapper.m_Camera_LockTarget;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1178,6 +1204,9 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
             @Cursor.started += instance.OnCursor;
             @Cursor.performed += instance.OnCursor;
             @Cursor.canceled += instance.OnCursor;
+            @LockTarget.started += instance.OnLockTarget;
+            @LockTarget.performed += instance.OnLockTarget;
+            @LockTarget.canceled += instance.OnLockTarget;
         }
 
         /// <summary>
@@ -1198,6 +1227,9 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
             @Cursor.started -= instance.OnCursor;
             @Cursor.performed -= instance.OnCursor;
             @Cursor.canceled -= instance.OnCursor;
+            @LockTarget.started -= instance.OnLockTarget;
+            @LockTarget.performed -= instance.OnLockTarget;
+            @LockTarget.canceled -= instance.OnLockTarget;
         }
 
         /// <summary>
@@ -1401,5 +1433,12 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnCursor(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "LockTarget" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLockTarget(InputAction.CallbackContext context);
     }
 }
