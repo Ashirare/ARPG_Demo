@@ -273,3 +273,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee08b418031050c43a6621d3510f17b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiLayer: 0
+  uiTransform: {fileID: 0}
