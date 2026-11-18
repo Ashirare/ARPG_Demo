@@ -181,6 +181,24 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Skill"",
+                    ""type"": ""Button"",
+                    ""id"": ""c0ae1faa-a8ab-49f4-82ea-30e97fe88a52"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UltimateSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""b9933145-499b-454d-9011-53bc43faa7d0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -293,158 +311,26 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
                     ""action"": ""StrongAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""FreeObject"",
-            ""id"": ""a0f05d77-1b2e-4adc-a5ff-1215bc87ccf3"",
-            ""actions"": [
-                {
-                    ""name"": ""Click"",
-                    ""type"": ""Button"",
-                    ""id"": ""ee181796-1830-443f-b11d-6f1f2f5edbf8"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 },
-                {
-                    ""name"": ""RightClick"",
-                    ""type"": ""Button"",
-                    ""id"": ""fd29448c-1de0-45d5-9b57-31088ae9f300"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Move2"",
-                    ""type"": ""Value"",
-                    ""id"": ""a167f1d4-eb97-4e82-ab97-17583d80ddd0"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Spring"",
-                    ""type"": ""Button"",
-                    ""id"": ""f478438d-0967-4d79-b655-eeeca8fb6d35"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""fe519aaf-4420-479f-90cc-2a665bd6ad76"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Click"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""3D Vector"",
-                    ""id"": ""269ec86b-73bc-4470-b493-d2f1b1e6ccc6"",
-                    ""path"": ""3DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move2"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Up"",
-                    ""id"": ""82177e51-903a-454a-944c-d7b9f9620d4c"",
+                    ""id"": ""1da34f4d-a84e-4bd3-a982-97d008cd3578"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Down"",
-                    ""id"": ""56a83b1a-0ae1-416d-8589-e0a135b314bf"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Left"",
-                    ""id"": ""c47cbbe0-e3d0-4d5f-aec7-5e316da2d6dc"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Right"",
-                    ""id"": ""91cfca1b-8fdc-47b8-a919-d9d6b9047323"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Forward"",
-                    ""id"": ""4aadc2e1-2d5c-4f24-b350-c4f5a52e1a40"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Backward"",
-                    ""id"": ""7644347c-d390-4eed-bd09-5ca46ab73d59"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""182d6eb2-bd9d-4841-8c70-7d22e2eb1d24"",
-                    ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Spring"",
+                    ""groups"": "";PC"",
+                    ""action"": ""Skill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""59e8a8ac-add3-46b8-b59a-9a5a4fc57214"",
-                    ""path"": ""<Mouse>/rightButton"",
+                    ""id"": ""23fbf1ba-a62e-434d-898e-f066ac8d0a8e"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightClick"",
+                    ""groups"": "";PC"",
+                    ""action"": ""UltimateSkill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -620,12 +506,8 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         m_Player_Block = m_Player.FindAction("Block", throwIfNotFound: true);
         m_Player_SwitchWR = m_Player.FindAction("SwitchWR", throwIfNotFound: true);
         m_Player_StrongAttack = m_Player.FindAction("StrongAttack", throwIfNotFound: true);
-        // FreeObject
-        m_FreeObject = asset.FindActionMap("FreeObject", throwIfNotFound: true);
-        m_FreeObject_Click = m_FreeObject.FindAction("Click", throwIfNotFound: true);
-        m_FreeObject_RightClick = m_FreeObject.FindAction("RightClick", throwIfNotFound: true);
-        m_FreeObject_Move2 = m_FreeObject.FindAction("Move2", throwIfNotFound: true);
-        m_FreeObject_Spring = m_FreeObject.FindAction("Spring", throwIfNotFound: true);
+        m_Player_Skill = m_Player.FindAction("Skill", throwIfNotFound: true);
+        m_Player_UltimateSkill = m_Player.FindAction("UltimateSkill", throwIfNotFound: true);
         // System
         m_System = asset.FindActionMap("System", throwIfNotFound: true);
         m_System_SwitchControll = m_System.FindAction("SwitchControll", throwIfNotFound: true);
@@ -640,7 +522,6 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
     ~@ARPGActions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, ARPGActions.Player.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_FreeObject.enabled, "This will cause a leak and performance issues, ARPGActions.FreeObject.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_System.enabled, "This will cause a leak and performance issues, ARPGActions.System.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_Camera.enabled, "This will cause a leak and performance issues, ARPGActions.Camera.Disable() has not been called.");
     }
@@ -728,6 +609,8 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Block;
     private readonly InputAction m_Player_SwitchWR;
     private readonly InputAction m_Player_StrongAttack;
+    private readonly InputAction m_Player_Skill;
+    private readonly InputAction m_Player_UltimateSkill;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -779,6 +662,14 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/StrongAttack".
         /// </summary>
         public InputAction @StrongAttack => m_Wrapper.m_Player_StrongAttack;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Skill".
+        /// </summary>
+        public InputAction @Skill => m_Wrapper.m_Player_Skill;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/UltimateSkill".
+        /// </summary>
+        public InputAction @UltimateSkill => m_Wrapper.m_Player_UltimateSkill;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -835,6 +726,12 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
             @StrongAttack.started += instance.OnStrongAttack;
             @StrongAttack.performed += instance.OnStrongAttack;
             @StrongAttack.canceled += instance.OnStrongAttack;
+            @Skill.started += instance.OnSkill;
+            @Skill.performed += instance.OnSkill;
+            @Skill.canceled += instance.OnSkill;
+            @UltimateSkill.started += instance.OnUltimateSkill;
+            @UltimateSkill.performed += instance.OnUltimateSkill;
+            @UltimateSkill.canceled += instance.OnUltimateSkill;
         }
 
         /// <summary>
@@ -876,6 +773,12 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
             @StrongAttack.started -= instance.OnStrongAttack;
             @StrongAttack.performed -= instance.OnStrongAttack;
             @StrongAttack.canceled -= instance.OnStrongAttack;
+            @Skill.started -= instance.OnSkill;
+            @Skill.performed -= instance.OnSkill;
+            @Skill.canceled -= instance.OnSkill;
+            @UltimateSkill.started -= instance.OnUltimateSkill;
+            @UltimateSkill.performed -= instance.OnUltimateSkill;
+            @UltimateSkill.canceled -= instance.OnUltimateSkill;
         }
 
         /// <summary>
@@ -909,135 +812,6 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="PlayerActions" /> instance referencing this action map.
     /// </summary>
     public PlayerActions @Player => new PlayerActions(this);
-
-    // FreeObject
-    private readonly InputActionMap m_FreeObject;
-    private List<IFreeObjectActions> m_FreeObjectActionsCallbackInterfaces = new List<IFreeObjectActions>();
-    private readonly InputAction m_FreeObject_Click;
-    private readonly InputAction m_FreeObject_RightClick;
-    private readonly InputAction m_FreeObject_Move2;
-    private readonly InputAction m_FreeObject_Spring;
-    /// <summary>
-    /// Provides access to input actions defined in input action map "FreeObject".
-    /// </summary>
-    public struct FreeObjectActions
-    {
-        private @ARPGActions m_Wrapper;
-
-        /// <summary>
-        /// Construct a new instance of the input action map wrapper class.
-        /// </summary>
-        public FreeObjectActions(@ARPGActions wrapper) { m_Wrapper = wrapper; }
-        /// <summary>
-        /// Provides access to the underlying input action "FreeObject/Click".
-        /// </summary>
-        public InputAction @Click => m_Wrapper.m_FreeObject_Click;
-        /// <summary>
-        /// Provides access to the underlying input action "FreeObject/RightClick".
-        /// </summary>
-        public InputAction @RightClick => m_Wrapper.m_FreeObject_RightClick;
-        /// <summary>
-        /// Provides access to the underlying input action "FreeObject/Move2".
-        /// </summary>
-        public InputAction @Move2 => m_Wrapper.m_FreeObject_Move2;
-        /// <summary>
-        /// Provides access to the underlying input action "FreeObject/Spring".
-        /// </summary>
-        public InputAction @Spring => m_Wrapper.m_FreeObject_Spring;
-        /// <summary>
-        /// Provides access to the underlying input action map instance.
-        /// </summary>
-        public InputActionMap Get() { return m_Wrapper.m_FreeObject; }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
-        public void Enable() { Get().Enable(); }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
-        public void Disable() { Get().Disable(); }
-        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
-        public bool enabled => Get().enabled;
-        /// <summary>
-        /// Implicitly converts an <see ref="FreeObjectActions" /> to an <see ref="InputActionMap" /> instance.
-        /// </summary>
-        public static implicit operator InputActionMap(FreeObjectActions set) { return set.Get(); }
-        /// <summary>
-        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
-        /// </summary>
-        /// <param name="instance">Callback instance.</param>
-        /// <remarks>
-        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
-        /// </remarks>
-        /// <seealso cref="FreeObjectActions" />
-        public void AddCallbacks(IFreeObjectActions instance)
-        {
-            if (instance == null || m_Wrapper.m_FreeObjectActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_FreeObjectActionsCallbackInterfaces.Add(instance);
-            @Click.started += instance.OnClick;
-            @Click.performed += instance.OnClick;
-            @Click.canceled += instance.OnClick;
-            @RightClick.started += instance.OnRightClick;
-            @RightClick.performed += instance.OnRightClick;
-            @RightClick.canceled += instance.OnRightClick;
-            @Move2.started += instance.OnMove2;
-            @Move2.performed += instance.OnMove2;
-            @Move2.canceled += instance.OnMove2;
-            @Spring.started += instance.OnSpring;
-            @Spring.performed += instance.OnSpring;
-            @Spring.canceled += instance.OnSpring;
-        }
-
-        /// <summary>
-        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
-        /// </summary>
-        /// <remarks>
-        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
-        /// </remarks>
-        /// <seealso cref="FreeObjectActions" />
-        private void UnregisterCallbacks(IFreeObjectActions instance)
-        {
-            @Click.started -= instance.OnClick;
-            @Click.performed -= instance.OnClick;
-            @Click.canceled -= instance.OnClick;
-            @RightClick.started -= instance.OnRightClick;
-            @RightClick.performed -= instance.OnRightClick;
-            @RightClick.canceled -= instance.OnRightClick;
-            @Move2.started -= instance.OnMove2;
-            @Move2.performed -= instance.OnMove2;
-            @Move2.canceled -= instance.OnMove2;
-            @Spring.started -= instance.OnSpring;
-            @Spring.performed -= instance.OnSpring;
-            @Spring.canceled -= instance.OnSpring;
-        }
-
-        /// <summary>
-        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="FreeObjectActions.UnregisterCallbacks(IFreeObjectActions)" />.
-        /// </summary>
-        /// <seealso cref="FreeObjectActions.UnregisterCallbacks(IFreeObjectActions)" />
-        public void RemoveCallbacks(IFreeObjectActions instance)
-        {
-            if (m_Wrapper.m_FreeObjectActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        /// <summary>
-        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
-        /// </summary>
-        /// <remarks>
-        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
-        /// </remarks>
-        /// <seealso cref="FreeObjectActions.AddCallbacks(IFreeObjectActions)" />
-        /// <seealso cref="FreeObjectActions.RemoveCallbacks(IFreeObjectActions)" />
-        /// <seealso cref="FreeObjectActions.UnregisterCallbacks(IFreeObjectActions)" />
-        public void SetCallbacks(IFreeObjectActions instance)
-        {
-            foreach (var item in m_Wrapper.m_FreeObjectActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_FreeObjectActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    /// <summary>
-    /// Provides a new <see cref="FreeObjectActions" /> instance referencing this action map.
-    /// </summary>
-    public FreeObjectActions @FreeObject => new FreeObjectActions(this);
 
     // System
     private readonly InputActionMap m_System;
@@ -1353,42 +1127,20 @@ public partial class @ARPGActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnStrongAttack(InputAction.CallbackContext context);
-    }
-    /// <summary>
-    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "FreeObject" which allows adding and removing callbacks.
-    /// </summary>
-    /// <seealso cref="FreeObjectActions.AddCallbacks(IFreeObjectActions)" />
-    /// <seealso cref="FreeObjectActions.RemoveCallbacks(IFreeObjectActions)" />
-    public interface IFreeObjectActions
-    {
         /// <summary>
-        /// Method invoked when associated input action "Click" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Skill" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnClick(InputAction.CallbackContext context);
+        void OnSkill(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "RightClick" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "UltimateSkill" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnRightClick(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Move2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMove2(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Spring" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSpring(InputAction.CallbackContext context);
+        void OnUltimateSkill(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "System" which allows adding and removing callbacks.
